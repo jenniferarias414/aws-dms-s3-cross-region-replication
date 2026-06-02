@@ -1,0 +1,27 @@
+# Private notes and course material
+notes/private/
+
+# Credentials and secrets
+.env
+*.pem
+*.key
+credentials.json
+config.json
+
+# Local data exports
+data/
+output/
+*.csv
+*.json
+*.parquet
+*.sql.gz
+*.dump
+
+# Python / system
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/
