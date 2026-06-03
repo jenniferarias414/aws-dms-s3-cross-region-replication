@@ -88,6 +88,8 @@ The source database used a small retail-style schema:
 
 The seed SQL creates the source schema, inserts test records, and includes validation queries.
 
+DBeaver was used as the SQL client to connect to the RDS MySQL source, run the seed script, and validate the source tables before running the DMS migration task.
+
 See:
 
 ```text

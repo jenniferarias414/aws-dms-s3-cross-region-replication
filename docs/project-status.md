@@ -55,6 +55,8 @@ The project was validated in several stages.
 
 The RDS MySQL database was created and populated with retail test data.
 
+DBeaver was used as the SQL client to connect to the RDS MySQL source, run SQL setup/validation queries, and confirm the source tables before DMS migration.
+
 Tables used:
 
 ```text

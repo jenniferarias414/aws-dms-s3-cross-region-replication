@@ -51,6 +51,8 @@ DMS wrote output files into:
 s3://dms-source-retail-jenny-us-east-2/dms-output/
 ```
 
+DBeaver was used as the SQL client for the source database work. It connected to the RDS MySQL instance so the seed script could be run, source tables could be checked, and validation queries could confirm the data before DMS migrated it.
+
 ## Full Load
 
 Full load means the first copy of existing data.
