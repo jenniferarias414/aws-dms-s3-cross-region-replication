@@ -16,9 +16,11 @@ SHOW VARIABLES LIKE 'binlog_row_image';
 CALL mysql.rds_set_configuration('binlog retention hours', 24);
 
 -- Create and use the source database.
-CREATE DATABASE IF NOT EXISTS retail;
+-- This schema name matters because AWS DMS table mappings must match
+-- the actual MySQL database/schema name.
+CREATE DATABASE IF NOT EXISTS dms_source_db;
 
-USE retail;
+USE dms_source_db;
 
 -- Drop tables if rerunning the lab seed script.
 DROP TABLE IF EXISTS orders;
