@@ -1,3 +1,11 @@
+"""
+Lambda function for event-driven S3 object replication.
+
+This function is triggered by SQS messages that contain SNS-wrapped
+S3 object-created events. It copies new objects from the source DMS
+output prefix into a target S3 bucket/prefix in another AWS region.
+"""
+
 import json
 import urllib.parse
 
